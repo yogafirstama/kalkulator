@@ -1,0 +1,98 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+button {
+    height: 50px;
+    margin: 2px;
+    font-size: 1.2em;
+    border-style: none;
+    /*background-color: #d6e0f5;*/
+    background-color: #3668ca;
+    color: white;
+}
+
+
+button:hover {
+    color: aliceblue;
+    background-color: #2050af;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.operator:hover {
+    color: aliceblue;
+    background-color: rgb(248, 184, 66);
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.calculator {
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+    max-width: 300px;
+   
+}
+
+.calcButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:0 auto;
+    background-color: black;
+    padding: 10px;
+}
+
+.calcButtons > button:nth-child(21) {
+ 
+    grid-column: 1/3;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.number, .decimal {
+    background-color: #3668ca;
+    color: white;
+}
+
+.userInput {
+    position: relative;
+    height: 80px;
+    max-width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-size: 25px;
+    /*border: 1px solid #193366;*/
+    background-color: #477ce7;
+    color: white;
+    border: 12px solid black;
+}
+
+
+
+.calcButtons > button:nth-child(20) {
+
+    background-color: orange;
+}
+
+.userEntry {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 5px;
+    right:0;
+}
+
+.finalCalc{
+
+    position: absolute;
+    right:0;
+    margin:5px;
+    top:0;
+    padding:0;
+}
